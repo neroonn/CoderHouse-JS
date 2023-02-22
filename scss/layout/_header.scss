@@ -1,0 +1,196 @@
+nav{
+    background-color: $nav-color;
+    height: 60px;
+    width: 100%;
+
+    .ul-nav{
+        display: flex;
+        justify-content: center;
+        line-height: 60px;
+    }
+
+    ul li a{
+        color: #fff;
+        padding: 0px 60px;
+    }
+
+}
+
+.enlace{
+    position: absolute;
+    padding: 10px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+.carrito{
+    display: none;
+}
+
+.li-buscador{
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+}
+
+.buscar{
+    display: none;
+    position: relative;
+    justify-content: center;
+
+    & input{
+        width: 250px;
+        height: 30px;
+        padding: 0 20px;
+        font-size: 1rem;
+        outline: none;
+        border: 1px solid #f8f9fa;	
+        border-radius: 30px;
+    }
+}
+
+.buscar2{
+    display: flex;
+    justify-content: center;
+    padding: 6px 0 0 50px;
+	line-height: 25px;
+
+    & input{
+        margin-top: 10px;
+        width: 250px;
+        height: 30px;
+        padding: 0 20px;
+        font-size: 1rem;
+        outline: none;
+        border: 1px solid #f8f9fa;	
+        border-radius: 30px;
+    }    
+}
+
+.items{
+    display: flex;
+    position: absolute;
+	padding-right: 50px;
+    top: 20px;
+    right: 0;
+
+    & a{
+        padding-left: 50px;
+        color: #fff;
+    }
+}
+
+
+#check{
+    display: none;
+}
+
+
+/*HEADER*/
+
+@media (max-width: 1350px) {
+    nav ul li a{
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .buscar2{
+        display: none;
+    }
+
+    .buscar{
+        display: flex;
+    }
+
+    nav{
+        height: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .checkbtn{
+        display: flex;
+        padding: 25px 25px 5px 5px;
+    }
+
+    nav{
+        height: 80px;
+    }
+
+    .items{
+        margin: 10px 50px 0px 0px;
+    }
+
+
+    .li-buscador{
+        padding: 25px 0 0 100px;
+        
+    }
+
+    .enlace{
+        padding: 15px 50px;
+    }
+
+    .ul-nav{
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        background-color: #343A40;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
+
+@media (max-width: 720px) {
+    .fa-user{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .fa-cart-shopping{
+        display: none;
+    }
+    .carrito{
+        display: flex;
+    }
+}
+
+@media (max-width: 505px) {
+    .buscar input{
+        display: none;
+    }
+    .buscar2{
+        display: flex;
+        padding-right: 50px ;
+    }
+    
+}
+
+/*HEADER*/
+

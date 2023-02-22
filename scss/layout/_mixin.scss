@@ -1,0 +1,16 @@
+@mixin colormixin(){
+    color: #252525;
+}
+.text-product{
+    @include colormixin();
+}
+
+@mixin direccion($flex, $wrap, $justify){
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+
+.card-list-products{
+    @include direccion(flex, wrap, center)
+}

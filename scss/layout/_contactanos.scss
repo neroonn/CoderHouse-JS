@@ -1,0 +1,73 @@
+.container-contactanos{
+	margin: 20px auto;
+	height: 480px;
+	width: 400px;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.40);
+
+	.contactanos-header{
+		text-align: center;
+		color: #363636;
+		padding: 10px;
+		border-bottom: 1px solid $gray-color;
+		text-align: center;
+		height: 40px;
+	}
+	.contactanos-form{
+		& div{
+			width: 100%;
+			padding: 8px;
+			text-align: center;	
+		}
+
+		& input{
+			width: 80%;
+			height: 30px;
+			outline: none;
+			border: 1px solid #ddd;
+			padding: 0 10px;
+			border-radius: 2px;
+			color: #333;
+			font-size: 0.8rem;
+
+			&:focus{
+				border-color: #358efb;
+			}
+		}
+
+		& button{
+			background-color: $button-green;
+			width: 60%;
+			height: 50px;
+			border-radius: 3px;
+			border: none;
+			color: #fff;
+			letter-spacing: 2px;
+			font-size: 14px;
+			text-transform: uppercase;	
+			cursor: pointer;
+		}
+
+		& #mensaje{
+			width: 90%;
+			height: 180px;
+			font-size: 16px;
+			padding: 10px;
+			outline: none;
+			border: 1px solid #333;
+			border-radius: 3px;
+			resize: none;
+
+			&:focus{
+				border-color: #3d92fa;
+			}
+		}
+	}
+}
+
+@media (max-width:450px) {
+	.container-contactanos{
+		width: 300px;
+	}
+}

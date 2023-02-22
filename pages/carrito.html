@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../assets/images/lowcosteicono.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Comprá indumentaria y calzado al mejor precio en Low Coste Argentina">
+	<meta name="keywords"  content="comprar, indumentaria, calzado, tienda"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Low Coste</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="../assets/images/LowCoste.webp" class="logo" alt="logo">
+            </a>
+            <ul class="ul-nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/perfil.html">Perfil</a></li>
+                <li><a href="../pages/contactanos.html">Contactanos</a></li>
+                <li class="carrito"><a href="../pages/carrito.html">Carrito</a></li>
+                <li class="li-buscador-nav">
+                    <label for="Buscar" class="buscar2">
+                        <input type="text" placeholder="Buscar" required>
+                    </label> 
+                </li>
+            </ul> 
+            <ul ul-buscador>
+                <li class="li-buscador">
+                    <label for="Buscar" class="buscar">
+                    <input type="text" placeholder="Buscar" required>
+                </label> 
+                </li>
+            </ul>
+            <div class="items">
+                <a href="../pages/perfil.html"><i class="fa-solid fa-user"></i></a>
+                <a href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    </header>
+    <div class="container-carrito">
+        <div class="carrito-productos">
+            <h5>Carrito de compras</h5>
+            <div class="producto-1"></div>
+            <div class="producto-1"></div>
+        </div> 
+        <div class="carrito-resumen">
+            <h5>Resumen de compra</h5>
+             <div class="descuento">
+                <p>Cupón de descuento:</p>
+                <input type="codigo" id="codigo" placeholder="Código">
+                <button class="boton-check"><i class="fa-solid fa-check"></i></button>
+             </div>
+            <div class="subtotal">
+                <p>Subtotal:</p>
+                <span>$999</span>
+            </div>
+            <div class="total">
+                <p>Total:</p>
+                <span>$999</span>
+            </div>
+            <div class="boton">
+                <button class="boton-basket"><i class="fa-solid fa-basket-shopping"></i>Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+    <footer>   
+        <div class="container-footer">
+			<p><b>METODOS DE PAGO</b></p>
+			<ul> 
+				<li><img src="../assets/images/visa.svg" alt="Visa"></li>
+				<li><img src="../assets/images/mastercard.svg" alt="Mastercard"></li>
+				<li><img src="../assets/images/paypal.svg" alt="Paypal"></li>
+			</ul>
+        </div>
+		<div class="footer-icons">
+			<p>Todos los derechos reservados @2022 <b>Low Coste</b></p>
+			<a href="https://www.instagram.com/lacoste/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+			<a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+		</div> 
+    </footer>
+</body>
+</html>
